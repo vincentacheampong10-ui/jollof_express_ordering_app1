@@ -42,10 +42,10 @@ public class Order {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        for (Meal m : meals) sb.append(m).append("\n");
-        if (drink != null) sb.append("Drink: ").append(drink).append("\n");
-        if (dessert != null) sb.append("Dessert: ").append(dessert).append("\n");
-        return sb.toString();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Meal m : meals) stringBuilder.append(m).append("\n");
+        if (drink != null) stringBuilder.append("Drink: ").append(drink).append("\n");
+        if (dessert != null) stringBuilder.append("Dessert: ").append(dessert).append("\n");
+        return stringBuilder.toString();
     }
 }
