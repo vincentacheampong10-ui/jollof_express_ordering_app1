@@ -13,10 +13,10 @@ public class Order {
         this.drink = drink;
         this.dessert = dessert;
     }
+
     public Order() {
 
     }
-
 
 
     public void addMeal(Meal meal) {
@@ -38,5 +38,14 @@ public class Order {
         if (dessert != null) total += dessert.getPrice();
         return total;
 
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        for (Meal m : meals) sb.append(m).append("\n");
+        if (drink != null) sb.append("Drink: ").append(drink).append("\n");
+        if (dessert != null) sb.append("Dessert: ").append(dessert).append("\n");
+        return sb.toString();
     }
 }
