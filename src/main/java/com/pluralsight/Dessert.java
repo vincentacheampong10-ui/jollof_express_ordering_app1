@@ -16,9 +16,9 @@ public class Dessert {
         switch (scanner.nextLine()) {
             case "1": return new Dessert("Cake", 8);
             case "2": return new Dessert("Chin Chin", 6);
-            case "3": return new Dessert("ruit Cup", 7);
+            case "3": return new Dessert("Fruit Cup", 7);
             default:
-                System.out.println("Choose an option above");
+                System.out.println("Invalid selection. Select the above options");
         }
         return null;
     }
