@@ -20,7 +20,11 @@ public class Order {
 
 
     public void addMeal(Meal meal) {
-        meals.add(meal);
+        if (meal != null) {
+            this.meals.add(meal);
+        } else {
+            System.out.println("Warning: Empty meal.");
+        }
     }
 
     public void setDrink(Drink drink) {
