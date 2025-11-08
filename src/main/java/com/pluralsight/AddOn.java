@@ -2,21 +2,27 @@ package com.pluralsight;
 
 public class AddOn {
     private String name;
-    private boolean premium;
+    private double cost;
 
     public AddOn(String name, boolean premium) {
         this.name = name;
-        this.premium = premium;
+        this.cost = premium ? 6 : 3; ///true : false
+    }
+
+    public AddOn(String name, double cost) {
+        this.name = name;
+        this.cost = cost;
     }
 
 
     public double getCost() {
-        return premium ? 6 : 3; ///true : false
+        return cost;
     }
 
     @Override
     public String toString() {
-        return name + (premium ? " (+6)" : " (+3)"); ///string appended to name if premium is true (+6)
+        return name + " (GHS " + String.format("%.2f", cost) + ")";
     }
 }
+
 
