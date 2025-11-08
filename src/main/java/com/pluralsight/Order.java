@@ -18,7 +18,6 @@ public class Order {
 
     }
 
-
     public void addMeal(Meal meal) {
         if (meal != null) {
             this.meals.add(meal);
@@ -37,19 +36,39 @@ public class Order {
 
     public double calculateTotal() {
         double total = 0;
-        for (Meal meal : meals) total += meal.calculatePrice();
-        if (drink != null) total += drink.getPrice();
-        if (dessert != null) total += dessert.getPrice();
-        return total;
+        for (Meal meal : meals) {
+            total += meal.calculatePrice();
+        }
+        // Adds drink price if present
+        if (drink != null) {
+            total += drink.getPrice();
+        }
 
+        // Adds dessert price if present
+        if (dessert != null) {
+            total += dessert.getPrice();
+        }
+        return total;
     }
+
 
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
-        for (Meal m : meals) stringBuilder.append(m).append("\n");
-        if (drink != null) stringBuilder.append("Drink: ").append(drink).append("\n");
-        if (dessert != null) stringBuilder.append("Dessert: ").append(dessert).append("\n");
+        // Append all meals
+        for (Meal m : meals) {
+            stringBuilder.append(m).append("\n");
+        }
+
+        // Append drink and dessert if they exist
+        if (drink != null) {
+            stringBuilder.append("Drink: ").append(drink).append("\n");
+        }
+        if (dessert != null) {
+            stringBuilder.append("Dessert: ").append(dessert).append("\n");
+        }
+
         return stringBuilder.toString();
     }
 }
+
