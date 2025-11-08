@@ -96,7 +96,6 @@ public class UserInterface {
         System.out.print("Confirm order? (y/n): ");
         if (scanner.nextLine().equalsIgnoreCase("y")) {
             ReceiptManager.saveReceipt(currentOrder);
-            System.out.println("✅ Order saved successfully!");
         } else {
             System.out.println("Order canceled.");
         }

@@ -11,12 +11,15 @@ public class AddOn {
 
     public AddOn(String name, double cost) {
         this.name = name;
-        this.cost = cost;
+        this.cost = Math.max(0, cost);
     }
-
 
     public double getCost() {
         return cost;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
