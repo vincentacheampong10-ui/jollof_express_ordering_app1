@@ -48,19 +48,35 @@ public class UserInterface {
             switch (choice) {
                 case "1":
                     JollofMeal jollof = JollofMeal.createFromUserInput(scanner);
-                    currentOrder.addMeal(jollof);
+                    if (jollof != null) {
+                        currentOrder.addMeal(jollof);
+                    } else {
+                        System.out.println("Jollof Meal not added.");
+                    }
                     break;
                 case "2":
                     Drink drink = Drink.createFromUserInput(scanner);
-                    currentOrder.setDrink(drink);
+                    if (drink != null) {
+                        currentOrder.setDrink(drink);
+                    } else {
+                        System.out.println("Drink not added.");
+                    }
                     break;
                 case "3":
                     Dessert dessert = Dessert.createFromUserInput(scanner);
-                    currentOrder.setDessert(dessert);
+                    if (dessert != null) {
+                        currentOrder.setDessert(dessert);
+                    } else {
+                        System.out.println("Dessert not added due to invalid input.");
+                    }
                     break;
                 case "4":
-                    checkout();
-                    ordering = false;
+                    if (currentOrder.calculateTotal() > 0) {
+                        checkout();
+                        ordering = false;
+                    } else {
+                        System.out.println("Order is empty! Please add an item before checking out.");
+                    }
                     break;
                 case "0":
                     System.out.println("Order canceled.");
