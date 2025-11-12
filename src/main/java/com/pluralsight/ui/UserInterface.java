@@ -1,4 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.ui;
+
+import com.pluralsight.data.ReceiptManager;
+import com.pluralsight.model.*;
 
 import java.util.Scanner;
 
