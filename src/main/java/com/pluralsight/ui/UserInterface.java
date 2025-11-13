@@ -290,11 +290,11 @@ public class UserInterface {
         System.out.println("╔══════════════════════════════════════════════════════╗");
         System.out.println("║                  SIGNATURE MEALS                     ║");
         System.out.println("╠══════════╦══════════════════════════════╦════════════╣");
-        System.out.println("║ Option   ║ Combo                        ║ Price (GHS)║");
+        System.out.println("║ Option   ║  Meals                       ║ Price (GHS)║");
         System.out.println("╠══════════╬══════════════════════════════╬════════════╣");
-        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "1","Jollof + Drink Combo (Save 10%)", 30.00);
-        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "2","Party Pack (3 Meals + Sides)", 85.00);
-        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "3","Student Meal Deal (Budget Size)", 20.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "1","Classic Jollof + Chicken + Kelewele + Sobolo", 30.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "2","Veg Jollof + Tofu + Salad + Fresh Juice", 85.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "3","Party Jollof + Goat Meat + Shito + Malt", 20.00);
         System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "4","None", 0.00);
         System.out.println("╚══════════╩══════════════════════════════╩════════════╝");
         System.out.print("Enter combo choice:");
@@ -306,26 +306,25 @@ public class UserInterface {
 
         switch (comboChoice) {
             case "1":
-                name = "Jollof + Drink Combo";
+                name = "Classic Jollof + Chicken + Kelewele + Sobolo";
                 price = 30.00;
-                // Assuming Combo is now ComboItem or Combo with appropriate constructor
                 combo = new Combo(name, price);
                 break;
             case "2":
-                name = "Party Pack";
+                name = "Veg Jollof + Tofu + Salad + Fresh Juice";
                 price = 85.00;
                 combo = new Combo(name, price);
                 break;
             case "3":
-                name = "Student Meal Deal";
-                price = 20.00;
+                name = "Party Jollof + Goat Meat + Shito + Malt";
+                price = 90.00;
                 combo = new Combo(name, price);
                 break;
             case "4":
-                System.out.println("No combo selected.");
+                System.out.println("None.");
                 return;
             default:
-                System.out.println("Invalid combo choice.");
+                System.out.println("Invalid Signature meal choice.");
                 return;
         }
 
@@ -341,13 +340,13 @@ public class UserInterface {
         boolean customizing = true;
         while (customizing) {
             System.out.println("╔════════════════════════════════════════════════════╗");
-            System.out.printf( "║           ⚙️  CUSTOMIZE %-20s ║%n", combo.getName().toUpperCase());
+            System.out.printf( "║CUSTOMIZE %-20s ║%n", combo.getName().toUpperCase());
             System.out.println("╠════════════════════════════════════════════════════╣");
-            System.out.printf( "║ Current Combo Price: GHS %-24.2f ║%n", combo.calculatePrice());
+            System.out.printf( "║ Current Combo Price: GHS %-24.2f  ║%n", combo.calculatePrice());
             System.out.println("╠════════════════════════════════════════════════════╣");
-            System.out.println("║ 1. Add another Jollof Meal (Custom)                ║");
+            System.out.println("║ 1. Add another rice                                ║");
             System.out.println("║ 2. Add another Drink                               ║");
-            System.out.println("║ 3. Add another Side (Dessert)                      ║");
+            System.out.println("║ 3. Add another Side                                ║");
             System.out.println("║ 0. Done Customizing                                ║");
             System.out.println("╚════════════════════════════════════════════════════╝");
             System.out.print("Choose an option:");
@@ -358,22 +357,22 @@ public class UserInterface {
                     // Use the existing Jollof customization tool
                     JollofMeal jollof = getJollofMealFromUser();
                     if (jollof != null) {
-                        combo.addComponent(jollof); // Assumes Combo has an addComponent method
-                        System.out.println("✅ " + jollof.getName() + " added to combo.");
+                        combo.addComponent(jollof);
+                        System.out.println("✅ " + jollof.getName() + " added to meal.");
                     }
                     break;
                 case "2":
                     Drink drink = Drink.createFromUserInput(scanner);
                     if (drink != null) {
-                        combo.addComponent(drink); // Assumes Combo can hold Drinks
-                        System.out.println("✅ " + drink.getName() + " added to combo.");
+                        combo.addComponent(drink);
+                        System.out.println("✅ " + drink.getName() + " added to meal.");
                     }
                     break;
                 case "3":
                     Dessert dessert = Dessert.createFromUserInput(scanner);
                     if (dessert != null) {
                         combo.addComponent(dessert); // Assumes Combo can hold Desserts
-                        System.out.println("✅ " + dessert.getName() + " added to combo.");
+                        System.out.println("✅ " + dessert.getName() + " added to meal.");
                     }
                     break;
                 case "0":

@@ -16,6 +16,12 @@ public class Combo extends Meal {
             this.list.add(component);
         }
     }
+
+        public void removeComponent () {
+
+        }
+
+
     @Override
     public double calculatePrice() {
         double total = this.basePrice; // Start with the fixed base price of the combo
