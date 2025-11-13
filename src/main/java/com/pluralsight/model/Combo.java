@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Combo extends Meal {
 
-    private List<Object> components = new ArrayList<>();
+    private List<Object> list = new ArrayList<>();
 
     public Combo(String name, double basePrice) {
         super(name, basePrice);
@@ -13,14 +13,14 @@ public class Combo extends Meal {
 
     public void addComponent(Object component) {
         if (component != null) {
-            this.components.add(component);
+            this.list.add(component);
         }
     }
     @Override
     public double calculatePrice() {
         double total = this.basePrice; // Start with the fixed base price of the combo
 
-        for (Object component : components) {
+        for (Object component : list) {
             if (component instanceof Meal) {
                 total += ((Meal) component).calculatePrice();
             } else if (component instanceof Drink) {
@@ -37,6 +37,6 @@ public class Combo extends Meal {
     @Override
     public String toString() {
         // ... (You will also need to update toString to list the components) ...
-        return name + " Combo [Price: GHS " + String.format("%.2f", calculatePrice()) + ", Components: " + components.size() + " added]";
+        return name + " Combo [Price: GHS " + String.format("%.2f", calculatePrice()) + ", Components: " + list.size() + " added]";
     }
 }
