@@ -30,13 +30,12 @@ public class Combo extends Meal {
             }
         }
 
-        // You would apply discounts here if the logic required it.
         return total;
     }
 
     @Override
     public String toString() {
-        // ... (You will also need to update toString to list the components) ...
+        //  need to update toString to list the components
         return name + " Combo [Price: GHS " + String.format("%.2f", calculatePrice()) + ", Components: " + list.size() + " added]";
     }
 }
