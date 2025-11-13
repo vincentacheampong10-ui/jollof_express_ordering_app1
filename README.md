@@ -79,3 +79,8 @@ GUI version using JavaFX or Swing
 Save and load past orders
 
 Implement discount codes and loyalty points
+
+
+UML DIAGRM
+<img width="1263" height="814" alt="Screenshot 2025-11-13 112413" src="https://github.com/user-attachments/assets/41026a6d-06bb-4dbe-bc42-3d9bb64f5cb1" />
+
