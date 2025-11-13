@@ -63,7 +63,8 @@ Follow the on-screen prompts to create and order your meal.
 4. Checkout
 0. Cancel Order
 
-![Screenshot 2025-11-13 110705.png](../../../../Users/Student/Pictures/Screenshots/Screenshot%202025-11-13%20110705.png)
+<img width="1919" height="1033" alt="Screenshot 2025-11-13 110705" src="https://github.com/user-attachments/assets/4efad1f5-b625-4829-b255-f8ae472653bd" />
+
 🧪 Testing
 
 You can test functionality using JUnit:
