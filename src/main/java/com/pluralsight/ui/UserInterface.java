@@ -12,12 +12,12 @@ public class UserInterface {
     public void displayHome() {
         boolean running = true;
         while (running) {
-            System.out.println("\n╔═══════════════════════════════════════════════╗");
-            System.out.println("║          🍛  JOLLOF EXPRESS MENU              ║");
-            System.out.println("╠═══════════════════════════════════════════════╣");
-            System.out.println("║ 1.  New Order                                 ║");
-            System.out.println("║ 0.  Exit                                      ║");
-            System.out.println("╚═══════════════════════════════════════════════╝");
+            System.out.println("╔══════════════════════════════════════════════╗");
+            System.out.println("║              JOLLOF EXPRESS MENU             ║");
+            System.out.println("╠══════════════════════════════════════════════╣");
+            System.out.println("║ 1.  New Order                                ║");
+            System.out.println("║ 0.  Exit                                     ║");
+            System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Enter choice:");
             String choice = scanner.nextLine();
 
@@ -48,7 +48,7 @@ public class UserInterface {
             System.out.println("║  3. Add Side (Dessert)                       ║");
             System.out.println("║  4. Checkout                                 ║");
             System.out.println("║  5. Combo Deal (Save 20%)                    ║");
-            System.out.println("║  0. Cancel Order                             ║");
+            System.out.println("║  0. Exit                                     ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Enter your choice:");
             String choice = scanner.nextLine();
@@ -107,7 +107,7 @@ public class UserInterface {
 
     private JollofMeal getJollofMealFromUser() {
         // --- 1. Get Base Choices (Jollof Type, Size, Protein) ---
-        System.out.println("\n╔══════════════════════════════════════════════════╗");
+        System.out.println("╔══════════════════════════════════════════════════╗");
         System.out.println("║                 1. CHOOSE JOLLOF TYPE            ║");
         System.out.println("╠══════════════════════════════════════════════════╣");
         System.out.println("║  1. Classic Jollof        ($25)                  ║");
@@ -118,7 +118,7 @@ public class UserInterface {
         System.out.print("Enter your choice:");
         String typeChoice = scanner.nextLine();
 
-        System.out.println("\n╔══════════════════════════════════════════════════╗");
+        System.out.println("╔══════════════════════════════════════════════════╗");
         System.out.println("║                     2. CHOOSE SIZE               ║");
         System.out.println("╠══════════════════════════════════════════════════╣");
         System.out.println("║  1. Regular (x1.0)                               ║");
@@ -127,7 +127,7 @@ public class UserInterface {
         System.out.print("Enter your choice:");
         String sizeChoice = scanner.nextLine();
 
-        System.out.println("\n╔══════════════════════════════════════════════════╗");
+        System.out.println("╔══════════════════════════════════════════════════╗");
         System.out.println("║                 3. CHOOSE PROTEIN                ║");
         System.out.println("╠══════════════════════════════════════════════════╣");
         System.out.println("║  1. Chicken (+$8)                                ║");
@@ -148,7 +148,7 @@ public class UserInterface {
         final int premiumLimit = 3;
 
         while (addingAddOns) {
-            System.out.println("\n╔════════════════════════════════════════════════════════════╗");
+            System.out.println("╔════════════════════════════════════════════════════════════╗");
             System.out.println("║             4. ADD ADD-ONS                                 ║");
             System.out.println("╠════════════════════════════════════════════════════════════╣");
             System.out.println("║  Premium Limit Remaining: " + (premiumLimit - premiumCount) + " left                       ║");
@@ -180,7 +180,7 @@ public class UserInterface {
     private void handleRegularAddOns(JollofMeal jollof) {
         boolean choosingRegular = true;
         while (choosingRegular) {
-            System.out.println("\n╔══════════════════════════════════════════════════╗");
+            System.out.println("╔══════════════════════════════════════════════════╗");
             System.out.println("║                 REGULAR ADD-ONS                  ║");
             System.out.println("╠══════════════════════════════════════════════════╣");
             System.out.println("║  1) Plantain ............ (4.0)                  ║");
@@ -220,10 +220,10 @@ public class UserInterface {
         int addedCount = 0;
 
         while (choosingPremium && currentCount + addedCount < limit) {
-            System.out.println("\n╔══════════════════════════════════════════════════════╗");
+            System.out.println("╔══════════════════════════════════════════════════════╗");
             System.out.println("║               PREMIUM ADD-ONS (GHS 6 each)           ║");
             System.out.println("╠══════════════════════════════════════════════════════╣");
-            System.out.printf("║  Limit Remaining: %-35s║%n", (limit - (currentCount + addedCount)));
+            System.out.printf( "║  Limit Remaining: %-35s║%n", (limit - (currentCount + addedCount)));
             System.out.println("╠══════════════════════════════════════════════════════╣");
             System.out.println("║  1) Fried Plantain (Kelewele)                        ║");
             System.out.println("║  2) Extra Meat Portion                               ║");
@@ -267,9 +267,9 @@ public class UserInterface {
     // ... (rest of the class) ...
 
     private void checkout() {
-        System.out.println("\n╔════════════════════════════════════════════════════╗");
-        System.out.println("║                   🧾 ORDER SUMMARY                   ║");
-        System.out.println("╠══════════════════════════════════════════════════════╣");
+        System.out.println("╔════════════════════════════════════════════════════╗");
+        System.out.println("║                   🧾 ORDER SUMMARY                 ║");
+        System.out.println("╠════════════════════════════════════════════════════╣");
 
 // Display current order details
         System.out.println(currentOrder);
@@ -287,17 +287,17 @@ public class UserInterface {
     }
 
     private void selectCombo() {
-        System.out.println("\n╔══════════════════════════════════════════════════════╗");
-        System.out.println("║                🍱 SPECIAL COMBO DEALS                ║");
+        System.out.println("╔══════════════════════════════════════════════════════╗");
+        System.out.println("║                  SIGNATURE MEALS                     ║");
         System.out.println("╠══════════╦══════════════════════════════╦════════════╣");
         System.out.println("║ Option   ║ Combo                        ║ Price (GHS)║");
         System.out.println("╠══════════╬══════════════════════════════╬════════════╣");
-        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "1", "Jollof + Drink Combo (Save 10%)", 30.00);
-        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "2", "Party Pack (3 Meals + Sides)", 85.00);
-        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "3", "Student Meal Deal (Budget Size)", 20.00);
-        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "4", "None", 0.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "1","Jollof + Drink Combo (Save 10%)", 30.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "2","Party Pack (3 Meals + Sides)", 85.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-7.2f ║%n", "3","Student Meal Deal (Budget Size)", 20.00);
+        System.out.printf("║ %-8s ║ %-28s ║ %-10.2f ║%n", "4","None", 0.00);
         System.out.println("╚══════════╩══════════════════════════════╩════════════╝");
-        System.out.print("\nEnter combo choice:");
+        System.out.print("Enter combo choice:");
         String comboChoice = scanner.nextLine();
 
         Combo combo = null;
@@ -340,10 +340,10 @@ public class UserInterface {
     private void customizeCombo(Combo combo) {
         boolean customizing = true;
         while (customizing) {
-            System.out.println("\n╔════════════════════════════════════════════════════╗");
-            System.out.printf("║           ⚙️  CUSTOMIZE %-20s ║%n", combo.getName().toUpperCase());
+            System.out.println("╔════════════════════════════════════════════════════╗");
+            System.out.printf( "║           ⚙️  CUSTOMIZE %-20s ║%n", combo.getName().toUpperCase());
             System.out.println("╠════════════════════════════════════════════════════╣");
-            System.out.printf("║ Current Combo Price: GHS %-24.2f ║%n", combo.calculatePrice());
+            System.out.printf( "║ Current Combo Price: GHS %-24.2f ║%n", combo.calculatePrice());
             System.out.println("╠════════════════════════════════════════════════════╣");
             System.out.println("║ 1. Add another Jollof Meal (Custom)                ║");
             System.out.println("║ 2. Add another Drink                               ║");

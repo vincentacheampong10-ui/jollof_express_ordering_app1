@@ -12,7 +12,7 @@ public class Dessert {
     }
 
     public static Dessert createFromUserInput(Scanner scanner) {
-        System.out.println("\n╔══════════════════════════════════════════════╗");
+        System.out.println("╔══════════════════════════════════════════════╗");
         System.out.println("║             🍰  CHOOSE A DESSERT             ║");
         System.out.println("╠══════════════════════════════════════════════╣");
         System.out.println("║ 1️⃣  Cake ....................... GHS 8       ║");
