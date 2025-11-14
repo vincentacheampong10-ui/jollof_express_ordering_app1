@@ -107,6 +107,42 @@ public class JollofMeal extends Meal {
         return jollof;
     }
 
+    public static JollofMeal typeChoice(String typeChoiceStr, String sizeChoice, String proteinChoice) {
+
+        String mealType = "";
+        double mealBasePrice = 0.0;
+        int typeChoice;
+
+        // 1. Process Base Type
+        try {
+            typeChoice = Integer.parseInt(typeChoiceStr);
+        } catch (NumberFormatException e) {
+            return null;
+        }
+
+        switch (typeChoice) {
+            case 1:
+                mealType = "Classic Jollof";
+                mealBasePrice = 25;
+                break;
+            case 2:
+                mealType = "Coconut Jollof";
+                mealBasePrice = 30;
+                break;
+            case 3:
+                mealType = "Party Jollof";
+                mealBasePrice = 35;
+                break;
+            case 4:
+                mealType = "Vegetarian Jollof";
+                mealBasePrice = 27;
+                break;
+            default:
+
+        }
+        return null;
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();

@@ -14,5 +14,9 @@ public abstract class Meal {
     public String getName() {
         return name;
     }
+
+    public String setName() {
+        return "";
+    }
 }
 

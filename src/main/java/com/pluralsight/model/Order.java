@@ -51,6 +51,11 @@ public class Order {
         return total;
     }
 
+    // NEW: expose meals so UI can build custom summaries
+    public List<Meal> getMeals() {
+        return meals;
+    }
+
     @Override
     public String toString() {
         StringBuilder stringBuilder = new StringBuilder();
@@ -70,4 +75,3 @@ public class Order {
         return stringBuilder.toString();
     }
 }
-
