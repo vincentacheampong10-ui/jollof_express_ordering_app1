@@ -1,0 +1,4 @@
+=== Jollof Express Receipt ===
+Student Meal Deal Combo [Price: GHS 20.00, Components: 0 added]
+
+Total: GHS 20.00

@@ -1,0 +1,6 @@
+=== Jollof Express Receipt ===
+Jollof + Drink Combo Combo [Price: GHS 46.00, Components: 2 added]
+Drink: Malt (GHS 10.0)
+Dessert: Chin Chin (GHS 6.0)
+
+Total: GHS 62.00

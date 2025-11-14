@@ -1,0 +1,6 @@
+=== Jollof Express Receipt ===
+Classic Jollof (GHS 25.00) - Size: Large, Protein: Fish, Add-ons: Plantain, Egg, Egg, Egg, Plantain [Total Meal Cost: GHS 81.00]
+Jollof + Drink Combo Combo [Price: GHS 30.00, Components: 0 added]
+Drink: Malt (GHS 10.0)
+
+Total: GHS 121.00

@@ -1,0 +1,8 @@
+=== Jollof Express Receipt ===
+Classic Jollof (GHS 25.00) - Size: Regular, Protein: None [Total Meal Cost: GHS 25.00]
+Classic Jollof (GHS 25.00) - Size: Large, Protein: None, Add-ons: Extra Meat Portion [Total Meal Cost: GHS 46.50]
+Jollof + Drink Combo Combo [Price: GHS 60.00, Components: 1 added]
+Drink: Sobolo (GHS 8.0)
+Dessert: Fruit Cup (GHS 7.0)
+
+Total: GHS 146.50

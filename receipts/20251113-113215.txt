@@ -1,0 +1,5 @@
+=== Jollof Express Receipt ===
+Drink: Sobolo (GHS 8.0)
+Dessert: Cake (GHS 8.0)
+
+Total: GHS 16.00

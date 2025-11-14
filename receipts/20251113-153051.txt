@@ -1,0 +1,4 @@
+=== Jollof Express Receipt ===
+Drink: Malt (GHS 10.0)
+
+Total: GHS 10.00

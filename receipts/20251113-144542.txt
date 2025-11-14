@@ -1,0 +1,6 @@
+=== Jollof Express Receipt ===
+Student Meal Deal Combo [Price: GHS 20.00, Components: 0 added]
+Drink: Sobolo (GHS 8.0)
+Dessert: Fruit Cup (GHS 7.0)
+
+Total: GHS 35.00

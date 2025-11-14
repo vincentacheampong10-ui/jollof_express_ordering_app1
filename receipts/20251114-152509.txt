@@ -1,0 +1,14 @@
+=== Jollof Express Receipt ===
+Coconut Jollof (GHS 30.00) - Size: Regular, Protein: Beef, Add-ons: Fried Plantain (Kelewele), Extra Meat Portion, Fried Yam [Total Meal Cost: GHS 58.00]
+
+--- Classic Jollof + Chicken + Kelewele + Sobolo Combo ---
+Add-on: Chicken (GHS 8.0)
+Add-on: Kelewele (GHS 6.0)
+Drink: Sobolo (GHS 9.0)
+Meal: Coconut Jollof  (GHS 30.00) - Size: null, Protein: null [Total Meal Cost: GHS 0.00]
+Total Combo Price: GHS 53.00
+
+Drink: Malt (GHS 10.0)
+Dessert: Fruit Cup (GHS 7.0)
+
+Total: GHS 128.00

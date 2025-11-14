@@ -1,0 +1,11 @@
+=== Jollof Express Receipt ===
+
+--- Classic Jollof + Chicken + Kelewele + Sobolo Combo ---
+Add-on: Chicken (GHS 8.0)
+Add-on: Kelewele (GHS 6.0)
+Drink: Sobolo (GHS 9.0)
+Meal: Vegetarian Jollof (GHS 27.00) - Size: null, Protein: null [Total Meal Cost: GHS 0.00]
+Total Combo Price: GHS 53.00
+
+
+Total: GHS 53.00

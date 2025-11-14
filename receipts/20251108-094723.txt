@@ -1,0 +1,6 @@
+=== Jollof Express Receipt ===
+Classic Jollof (GHS 25.00) - Size: Regular, Protein: None [Total Meal Cost: GHS 25.00]
+Drink: Sobolo (GHS 8.0)
+Dessert: Cake (GHS 8.0)
+
+Total: GHS 41.00
