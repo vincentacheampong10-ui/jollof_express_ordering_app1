@@ -50,7 +50,7 @@ public class UserInterface {
             System.out.println("║  2. Add Drink                                ║");
             System.out.println("║  3. Add Side (Dessert)                       ║");
             System.out.println("║  4. Checkout                                 ║");
-            System.out.println("║  5. Combo Deal (Save 20%)                    ║");
+            System.out.println("║  5. Custom Meal                              ║");
             System.out.println("║  0. Exit                                     ║");
             System.out.println("╚══════════════════════════════════════════════╝");
             System.out.print("Enter your choice:");
@@ -505,7 +505,6 @@ public class UserInterface {
                 System.out.println("Invalid Signature meal choice.");
                 return null;
         }
-        // --- 2. Create Base Meal Object ---
         return new JollofMeal(name, price);
     }
 }
