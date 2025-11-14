@@ -21,7 +21,7 @@ public class UserInterface {
             System.out.println("║ 1.  New Order                                ║");
             System.out.println("║ 0.  Exit                                     ║");
             System.out.println("╚══════════════════════════════════════════════╝");
-            System.out.print("Enter choice:");
+            System.out.print("Enter choice: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -50,10 +50,10 @@ public class UserInterface {
             System.out.println("║  2. Add Drink                                ║");
             System.out.println("║  3. Add Side (Dessert)                       ║");
             System.out.println("║  4. Checkout                                 ║");
-            System.out.println("║  5. Custom Meal                              ║");
+            System.out.println("║  5. SIGNATURE Meal                           ║");
             System.out.println("║  0. Exit                                     ║");
             System.out.println("╚══════════════════════════════════════════════╝");
-            System.out.print("Enter your choice:");
+            System.out.print("Enter your choice: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -115,7 +115,7 @@ public class UserInterface {
         System.out.println("║  3. Party Jollof          ($35)                  ║");
         System.out.println("║  4. Vegetarian Jollof     ($27)                  ║");
         System.out.println("╚══════════════════════════════════════════════════╝");
-        System.out.print("Enter your choice:");
+        System.out.print("Enter your choice: ");
         String typeChoice = scanner.nextLine();
 
         System.out.println("╔══════════════════════════════════════════════════╗");
@@ -124,7 +124,7 @@ public class UserInterface {
         System.out.println("║  1. Regular (x1.0)                               ║");
         System.out.println("║  2. Large (x1.5)                                 ║");
         System.out.println("╚══════════════════════════════════════════════════╝");
-        System.out.print("Enter your choice:");
+        System.out.print("Enter your choice: ");
         String sizeChoice = scanner.nextLine();
 
         System.out.println("╔══════════════════════════════════════════════════╗");
@@ -135,7 +135,7 @@ public class UserInterface {
         System.out.println("║  3. Fish (+$12)                                  ║");
         System.out.println("║  4. None (+$0)                                   ║");
         System.out.println("╚══════════════════════════════════════════════════╝");
-        System.out.print("Enter your choice:");
+        System.out.print("Enter your choice: ");
         String proteinChoice = scanner.nextLine();
 
         // --- 2. Create Base Meal Object ---
@@ -156,7 +156,7 @@ public class UserInterface {
             System.out.println("║  P) Premium Add-on      →  GHS 6 each                      ║");
             System.out.println("║  0) Done Adding Add-ons                                    ║");
             System.out.println("╚════════════════════════════════════════════════════════════╝");
-            System.out.print("Choose R, P, or 0:");
+            System.out.print("Choose R, P, or 0: ");
             String categoryChoice = scanner.nextLine().toUpperCase();
 
             switch (categoryChoice) {
@@ -187,7 +187,7 @@ public class UserInterface {
             System.out.println("║  3) Coleslaw ............ (2.0)                  ║");
             System.out.println("║  0) Back                                         ║");
             System.out.println("╚══════════════════════════════════════════════════╝");
-            System.out.print("Enter choice:");
+            System.out.print("Enter choice: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -230,7 +230,7 @@ public class UserInterface {
             System.out.println("║  4) Avocado Slices                                   ║");
             System.out.println("║  0) Back                                             ║");
             System.out.println("╚══════════════════════════════════════════════════════╝");
-            System.out.print("Enter choice:");
+            System.out.print("Enter choice: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -379,7 +379,7 @@ public class UserInterface {
             System.out.println("║ 6. remove Side                                     ║");
             System.out.println("║ 0. Done Customizing                                ║");
             System.out.println("╚════════════════════════════════════════════════════╝");
-            System.out.print("Choose an option:");
+            System.out.print("Choose an option: ");
             String choice = scanner.nextLine();
 
             switch (choice) {
@@ -445,8 +445,7 @@ public class UserInterface {
                         ║  3. Party Jollof          ($35)                  ║
                         ║  4. Vegetarian Jollof     ($27)                  ║
                         ╚══════════════════════════════════════════════════╝ 
-                        Enter number to remove (or 0 to cancel):
-                """);
+                        Enter number to remove (or 0 to cancel): """);
 
         try {
             int choice = scanner.nextInt();
@@ -478,7 +477,7 @@ public class UserInterface {
         System.out.println("║  3. Party Jollof          ($35)                  ║");
         System.out.println("║  4. Vegetarian Jollof     ($27)                  ║");
         System.out.println("╚══════════════════════════════════════════════════╝");
-        System.out.print("Enter your choice:");
+        System.out.print("Enter your choice: ");
         String typeChoice = scanner.nextLine();
 
         String name;

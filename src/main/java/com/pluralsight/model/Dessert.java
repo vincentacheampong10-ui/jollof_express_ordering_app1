@@ -20,7 +20,7 @@ public class Dessert {
         System.out.println("║ 3️⃣  Fruit Cup .................. GHS 7       ║");
         System.out.println("║ 4️⃣  None ....................... GHS 0       ║");
         System.out.println("╚══════════════════════════════════════════════╝");
-        System.out.print("Enter choice:");
+        System.out.print("Enter choice: ");
         switch (scanner.nextLine()) {
             case "1":
                 return new Dessert("Cake", 8);
