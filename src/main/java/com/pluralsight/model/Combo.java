@@ -11,7 +11,7 @@ public class Combo extends Meal {
         super(name, basePrice);
     }
 
-    // Add any component (Meal, Drink, Dessert, AddOn, etc.)
+
     public void addComponent(Object component) {
         if (component != null) {
             this.components.add(component);

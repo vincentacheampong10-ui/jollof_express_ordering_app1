@@ -138,9 +138,9 @@ public class UserInterface {
         System.out.print("Enter your choice: ");
         String proteinChoice = scanner.nextLine();
 
-        // --- 2. Create Base Meal Object ---
+
         JollofMeal jollof = JollofMeal.createFromChoices(typeChoice, sizeChoice, proteinChoice);
-        if (jollof == null) return null; // Exit if base meal creation failed
+        if (jollof == null) return null;
 
         boolean addingAddOns = true;
         int premiumCount = 0;
@@ -279,9 +279,6 @@ public class UserInterface {
             }
         }
 
-        // Print drink/dessert (if set directly on the order)
-        // (Order.toString also prints these; we print separately for clarity)
-        System.out.println();
         System.out.println("╠══════════════════════════════════════════════════════╣");
         System.out.printf("║  💰 FINAL TOTAL: GHS %-30.2f ║%n", currentOrder.calculateTotal());
         System.out.println("╚══════════════════════════════════════════════════════╝");
@@ -449,7 +446,7 @@ public class UserInterface {
 
         try {
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             if (choice > 0 && choice <= currentJollofs.size()) {
                 return currentJollofs.get(choice - 1);

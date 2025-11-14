@@ -41,14 +41,13 @@ public class JollofMeal extends Meal {
         }
     }
 
-    // NEW: Accepts choices from UI, performs logic, returns meal (No Prompts/Scanner use)
+
     public static JollofMeal createFromChoices(String typeChoiceStr, String sizeChoice, String proteinChoice) {
 
         String mealType = "";
         double mealBasePrice = 0.0;
         int typeChoice;
 
-        // 1. Process Base Type
         try {
             typeChoice = Integer.parseInt(typeChoiceStr);
         } catch (NumberFormatException e) {

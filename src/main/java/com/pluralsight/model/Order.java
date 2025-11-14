@@ -64,7 +64,6 @@ public class Order {
             stringBuilder.append(m).append("\n");
         }
 
-        // Append drink and dessert if they exist
         if (drink != null) {
             stringBuilder.append("Drink: ").append(drink).append("\n");
         }
