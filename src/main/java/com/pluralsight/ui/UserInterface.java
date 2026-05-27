@@ -3,14 +3,17 @@ package com.pluralsight.ui;
 import com.pluralsight.data.ReceiptManager;
 import com.pluralsight.model.*;
 
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
+
 public class UserInterface {
     private Scanner scanner = new Scanner(System.in);
     private Order currentOrder = new Order();
+
 
     public void displayHome() {
         boolean running = true;
